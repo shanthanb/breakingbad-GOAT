@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const CharacterQuotes = ({ author }) => {
+const Quotes = ({ author }) => {
   const [quotes, setQuotes] = useState([]);
   useEffect(() => {
     fetch(`https://www.breakingbadapi.com/api/quotes?author=${author}`)
@@ -31,4 +31,4 @@ const CharacterQuotes = ({ author }) => {
   );
 };
 
-export default CharacterQuotes;
+export default Quotes;
