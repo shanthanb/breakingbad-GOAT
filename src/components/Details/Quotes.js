@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const Quotes = ({ author }) => {
   const [quotes, setQuotes] = useState([]);
   useEffect(() => {
-    fetch(`https://www.breakingbadapi.com/api/quotes?author=${author}`)
+    fetch(`https://www.breakingbadapi.com/api/quote?author=${author}`)
       .then((res) => res.json())
       .then((data) => setQuotes(data));
   }, [author]);
