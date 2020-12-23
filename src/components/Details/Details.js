@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import CharacterQuotes from "./CharacterQuotes";
+import Quotes from "./Quotes";
 
-const CharacterDetails = () => {
+const Details = () => {
   const { char_id } = useParams();
   const [castInfo, setCastInfo] = useState({});
   useEffect(() => {
@@ -74,10 +74,10 @@ const CharacterDetails = () => {
         <h3 className='text-center my-3'>
        Quotes Of <span className='text-body'>{castInfo.name}</span>
         </h3>
-        <CharacterQuotes author={nameForParam}></CharacterQuotes>
+        <Quotes author={nameForParam}></Quotes>
       </div>
     </div>
   );
 };
 
-export default CharacterDetails;
+export default Details;

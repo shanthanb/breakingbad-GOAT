@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import NavBar from './components/NavBar/NavBar';
 import Casts from './components/Casts/Casts';
-import CharacterDetails from './components/CharacterDetails/CharacterDetails';
+import Details from './components/Details/Details';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
             <Casts />
           </Route>
           <Route path='/castDetails/:char_id'>
-            <CharacterDetails />
+              <Details />
           </Route>
         </Switch>
       </Router>
